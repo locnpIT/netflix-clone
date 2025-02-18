@@ -63,6 +63,7 @@
     padding: 18px 22px;
     text-decoration: underline;
     z-index: 1;
+    display: none;
   
   }
   
@@ -71,6 +72,12 @@
     cursor: pointer;
   
   }
+  /* hover vô navbar-profile thì dropdown nó hiển thị */
+  .navbar-profile:hover .dropdown{
+    display: block;
+  }
+
+  
 
 
 
