@@ -57,4 +57,19 @@
 
 }
 
+.hero-btns .btn:hover{
+    background: #ffffffbf;
+}
+
+.hero-btns .btn.dark-btn:hover{
+    background: #6d6d6e66;
+}
+
+.more-cards{
+    padding-left: 6%;
+    
+}
+
+
+
 /* Uploda  */
