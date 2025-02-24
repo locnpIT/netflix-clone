@@ -19,7 +19,7 @@ const Login = () => {
           
           <input type='email' placeholder='Email' />
           <input type='password' placeholder='Password' />
-          <button>Sign Up</button>
+          <button>{signState}</button>
           <div className='form-help'>
             <div className='remember'>
               <input type='checkbox'/>
@@ -29,8 +29,11 @@ const Login = () => {
           </div>
         </form>
         <div className='form-switch'>
-          <p>New to Netflix? <span>Sign Up Now</span> </p>
-          <p>Already have account? <span>Sign In Now</span> </p>
+          {signState === "Sign In"? <p>New to Netflix? 
+          <span onClick={() => setSignState("Sign Up")}>Sign Up Now</span> </p> : 
+          <p>Already have account? <span onClick={() => setSignState("Sign In")}>Sign In Now</span> </p>}
+          
+          
         </div>
       </div>
     </div>
